@@ -12,7 +12,7 @@ const Navbar = () => {
 	}
 	return (
 		<>
-			<div className='flex justify-between p-4 max-w-7xl mx-auto'>
+			<div className='flex justify-between py-4 max-w-7xl mx-auto'>
 				{/* Logo */}
 				<div className='flex items-center gap-4'>
 					<AiOutlineMenu onClick={() => toggleDrawer(true)} className=' cursor-pointer' />
@@ -39,9 +39,9 @@ const Navbar = () => {
 			{/* drawer */}
 			<div>
 				{/* overlay */}
-				{isShowDrawer && <div className='fixed left-0 top-0 h-screen w-full bg-black/50' />}
+				{isShowDrawer && <div className='fixed left-0 top-0 h-screen w-full bg-black/50 z-10' />}
 				{/* drawer */}
-				<div className={`fixed top-0 w-[300px] h-screen bg-white p-6 ease-in duration-300 ${isShowDrawer ? 'left-0' : 'left-[-300px]'} `}>
+				<div className={`fixed top-0 w-[300px] h-screen bg-white p-6 ease-in duration-300 z-10 ${isShowDrawer ? 'left-0' : 'left-[-300px]'} `}>
 					<div className='flex items-center justify-between'>
 						<h1 className=' text-xl'>Best<span className=' font-bold'>Eats</span></h1>
 						<AiOutlineClose size={20} className=' cursor-pointer' onClick={() => toggleDrawer(false)} />
