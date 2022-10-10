@@ -10,13 +10,13 @@ const PopularFood = () => {
 				<h4>Filter Type</h4>
 				<div className=' flex justify-between'>
 					{
-						filterTypes.map(item => <button className='text-orange-500 border-orange-500'>{item}</button>)
+						filterTypes.map(item => <button className='text-orange-500 border-orange-500 hover:text-white hover:bg-orange-500'>{item}</button>)
 					}
 				</div>
 				<h4>Filter Price</h4>
 				<div className=' flex gap-8'>
 					{
-						filterPrices.map(item => <button className='text-orange-500 border-orange-500'>{item}</button>)
+						filterPrices.map(item => <button className='text-orange-500 border-orange-500 hover:text-white hover:bg-orange-500'>{item}</button>)
 					}
 				</div>
 
