@@ -17,7 +17,7 @@ const Navbar = () => {
 				<div className='flex items-center gap-4'>
 					<AiOutlineMenu onClick={() => toggleDrawer(true)} className=' cursor-pointer' />
 					<h1 className='text-2xl sm:text-3xl lg:text-4xl'>Best<span className='font-bold'>Eats</span></h1>
-					<div className='bg-gray-400 py-4 rounded-full'>
+					<div className='bg-gray-400 py-4 rounded-full hidden md:block'>
 						<span className='bg-black text-white p-4 rounded-full'>Delivery</span>
 						<span className='p-4'>PickUp</span>
 					</div>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
 				</div>
 				{/* Cart Button */}
-				<button className='bg-black text-white hidden sm:flex items-center rounded-full'>
+				<button className='bg-black text-white hidden md:flex items-center rounded-full'>
 					<AiOutlineShoppingCart size={25} className='mr-2' />Cart
 				</button>
 			</div>
@@ -48,13 +48,13 @@ const Navbar = () => {
 					</div>
 					{/* items */}
 					<ul className='mt-10 flex flex-col'>
-						<li className='p-4 flex items-center gap-2'><TbTruckDelivery size={20} />Orders</li>
-						<li className='p-4 flex items-center gap-2'><MdFavorite size={20} />Favorites</li>
-						<li className='p-4 flex items-center gap-2'><FaWallet size={20} />Wallet</li>
-						<li className='p-4 flex items-center gap-2'><MdHelp size={20} />Help</li>
-						<li className='p-4 flex items-center gap-2'><AiFillTag size={20} />Promotions</li>
-						<li className='p-4 flex items-center gap-2'><BsFillSaveFill size={20} />Best One</li>
-						<li className='p-4 flex items-center gap-2'><FaUserFriends size={20} />Invite Friends</li>
+						<li className='p-4 flex items-center gap-2 cursor-pointer'><TbTruckDelivery size={20} />Orders</li>
+						<li className='p-4 flex items-center gap-2 cursor-pointer'><MdFavorite size={20} />Favorites</li>
+						<li className='p-4 flex items-center gap-2 cursor-pointer'><FaWallet size={20} />Wallet</li>
+						<li className='p-4 flex items-center gap-2 cursor-pointer'><MdHelp size={20} />Help</li>
+						<li className='p-4 flex items-center gap-2 cursor-pointer'><AiFillTag size={20} />Promotions</li>
+						<li className='p-4 flex items-center gap-2 cursor-pointer'><BsFillSaveFill size={20} />Best One</li>
+						<li className='p-4 flex items-center gap-2 cursor-pointer'><FaUserFriends size={20} />Invite Friends</li>
 					</ul>
 				</div>
 			</div>
