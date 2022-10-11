@@ -1,3 +1,4 @@
+import Category from "./components/Category"
 import HeadlineCards from "./components/HeadlineCards"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <HeadlineCards />
       <PopularFood />
+      <Category />
     </div>
   )
 }
